@@ -2,7 +2,53 @@
     font-family: Verdana, sans-serif;
 }
 
+h1 {
+    line-height: 1em;
+    margin-bottom: 12px;
+}
+
 body {
+    font-size: 16px;
     max-width: 500px;
     margin: 0 auto;
+    padding: 24px;
+    background-color: #1F2937;
+    color: #ffffff;
+}
+header {
+    margin-bottom: 40px;
+}
+.container-passwords {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: space-between;
+    position: relative;
+    padding: 24px 0;
+    margin: 24px 0 0 0;
+    border-top: 1px solid #2F3E53;
+}
+.password-field {
+    flex-grow: 1;
+    background-color: #2F3E53;
+    color: #10B981;
+    min-width: fit-content;
+    width: 40%;
+    font-size: 0.8em;
+    padding: 8px;
+    border-radius: 10px;
+}
+.muted--light {
+    color: #D5D4D8;
+}
+.highlight {
+    color: #10B981;
+}
+.btn--primary {
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    background-color: #10B981;
+    color: #ffffff;
 }
