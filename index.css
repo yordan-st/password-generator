@@ -31,6 +31,7 @@ header {
 }
 .password-field {
     flex-grow: 1;
+    height: 35px;
     background-color: #2F3E53;
     color: #10B981;
     min-width: fit-content;
@@ -38,6 +39,8 @@ header {
     font-size: 0.8em;
     padding: 8px;
     border-radius: 10px;
+    border: unset;
+    text-align: inherit;
 }
 .muted--light {
     color: #D5D4D8;

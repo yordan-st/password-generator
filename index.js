@@ -3,7 +3,7 @@ const characters =["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","
 
 // create reassignable variables for the passwords
 let passwords = () => createPasswords()
-let maxCharacters = 15
+let passwordLength = 15
 
 // pick a random character
 function pickRandomCharacter(arr) {
@@ -12,7 +12,7 @@ function pickRandomCharacter(arr) {
 
 function createPassword() {
     let newPassword = ''
-    for(let i=0; i <= maxCharacters; i++) {
+    for(let i=0; i <= passwordLength; i++) {
         newPassword += pickRandomCharacter(characters)
     } return newPassword
 }
@@ -24,8 +24,8 @@ function createPasswords() {
         newPasswords.push(password)
     } 
     passwords = newPasswords
-    document.getElementById('password-one').textContent = passwords[0]
-    document.getElementById('password-two').textContent = passwords[1]
+    document.getElementById('password-one').value = passwords[0]
+    document.getElementById('password-two').value = passwords[1]
 }
 
 document.getElementById("btn-generate").addEventListener("click", createPasswords);
